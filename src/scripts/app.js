@@ -9,5 +9,5 @@ require("./views/search");
 require("./views/my");
 
 SPA.config({
-	indexView:"guide"    // 设置默认视图
+	indexView:"index"    // 设置默认视图
 })
