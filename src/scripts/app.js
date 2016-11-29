@@ -10,5 +10,5 @@ require("./views/my");
 require("./views/login");
 
 SPA.config({
-	indexView:"guide"    // 设置默认视图
+	indexView:"index"    // 设置默认视图
 })
