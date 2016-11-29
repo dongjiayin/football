@@ -1,0 +1,75 @@
+
+<div class="m-home">
+   <header>
+    <ul>
+      <li><i class='yo-ico menu'>&#xe745;</i></li>
+      <li>
+        <p id='title'>
+          <span class='active'>热点</span>
+          <span>关注</span>
+        </p>
+      </li>
+      <li><i class="yo-ico sm">&#xe684;</i></li>
+    </ul>
+  </header>
+    <div class="home-section">
+        <div class="swiper-container" id='swiper-container'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide blue-slide swiper-flex">
+                <nav>
+                   <ul id='nav'>
+                     <li action-type="tap.slide" ms-repeat-li='arr' ms-class-active='{{$index==0}}'>{{li}}</li>
+                      <!-- <li  class="active" action-type="tap.slide" data-tag='0'>足球生活</li>
+                      <li action-type="tap.slide" data-tag='1'>足球现场</li>
+                      <li action-type="tap.slide" data-tag='2'>足球美女</li> -->
+                   </ul>
+                </nav>
+                <div class="section-content">
+                    <div class="swiper-container" id='swiper-main'>
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide blue-slide">
+                            <div class="home-scroll" spa-widget='scroll' data-scroll-id='mainScroll'>
+                                <div class='scroller'>
+                                  <div class="head">
+                                     <img src="/football/images/arrow.png" alt="">
+                                     <span>下拉刷新</span>
+                                  </div>
+                                  <ul ms-repeat-obj='liveDate'>
+                                    <li action-type='go.detail'>
+                                        <img ms-src='obj[0].img'>
+                                        <b >{{obj[0].title}}</b>
+                                     </li>
+                                     <li></li>
+                                     <li action-type='go.detail'>
+                                        <img ms-src='obj[1].img'>
+                                        <b ms-text='obj[1].title'></b>
+                                     </li>
+                                     <!-- <li ms-class-hide='!obj[1]'>
+                                        <img ms-src='obj[1].img'>
+                                        <b ms-text='obj[1].title'></b>
+                                     </li> -->
+                                  </ul>
+                                  <div class="foot">
+                                      <img src="/football/images/arrow.png" alt="">
+                                      <span>上拉加载</span>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide red-slide">
+                          足球现场足球现场足球现场足球现场足球现场
+                        </div>
+                        <div class="swiper-slide orange-slide">
+                          足球美女足球美女足球美女足球美女足球美女足球美女足球美女
+                        </div>
+                      </div>
+                    </div>               
+                </div>
+            </div>
+            <div class="swiper-slide red-slide">关注</div>
+          </div>
+        </div>
+    </div>
+
+</div>
+
